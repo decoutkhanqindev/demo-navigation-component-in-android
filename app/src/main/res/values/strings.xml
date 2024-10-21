@@ -3,4 +3,6 @@
     <string name="mainActivityTitle">MainActivity</string>
     <string name="startButtonText">Start</string>
     <string name="myHomeFragmentTitle">MyHomeFragment</string>
+    <string name="mySecondFragmentTitle">MySecondFragment</string>
+    <string name="myThirdFragmentTitle">MyThirdFragment</string>
 </resources>
