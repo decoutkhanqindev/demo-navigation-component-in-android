@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigation"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/myHomeFragment">
 
     <fragment
         android:id="@+id/myHomeFragment"
@@ -29,7 +29,7 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/myThirdFragment"
@@ -41,20 +41,7 @@
             app:destination="@id/mySecondFragment" />
         <action
             android:id="@+id/action_myThirdFragment_to_myHomeFragment"
-            app:popUpTo="@id/myHomeFragment"
-            app:destination="@id/myHomeFragment" />
+            app:destination="@id/myHomeFragment"
+            app:popUpTo="@id/myHomeFragment" />
     </fragment>
-
-    <navigation
-        android:id="@+id/navigation"
-        app:startDestination="@id/mainActivity">
-        <activity
-            android:id="@+id/mainActivity"
-            android:name="com.example.demonavigationcomponetinandroid.MainActivity"
-            android:label="activity_main"
-            tools:layout="@layout/activity_main" />
-        <action
-            android:id="@+id/action_mainActivity_to_myHomeFragment"
-            app:destination="@id/myHomeFragment" />
-    </navigation>
 </navigation>
