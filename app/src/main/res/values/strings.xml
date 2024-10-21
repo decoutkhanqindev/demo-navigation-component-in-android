@@ -2,4 +2,5 @@
     <string name="app_name">DemoNavigationComponentInAndroid</string>
     <string name="mainActivityTitle">MainActivity</string>
     <string name="startButtonText">Start</string>
+    <string name="myHomeFragmentTitle">MyHomeFragment</string>
 </resources>
