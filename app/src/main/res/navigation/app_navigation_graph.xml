@@ -38,10 +38,17 @@
         tools:layout="@layout/fragment_my_third">
         <action
             android:id="@+id/action_myThirdFragment_to_mySecondFragment"
-            app:destination="@id/mySecondFragment" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/mySecondFragment" />
         <action
             android:id="@+id/action_myThirdFragment_to_myHomeFragment"
-            app:destination="@id/myHomeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
             app:popUpTo="@id/myHomeFragment" />
     </fragment>
 </navigation>
