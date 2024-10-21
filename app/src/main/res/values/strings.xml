@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">DemoNavigationComponetInAndroid</string>
+    <string name="app_name">DemoNavigationComponentInAndroid</string>
+    <string name="mainActivityTitle">MainActivity</string>
+    <string name="startButtonText">Start</string>
 </resources>
