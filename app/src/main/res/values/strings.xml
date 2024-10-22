@@ -5,4 +5,13 @@
     <string name="myHomeFragmentTitle">MyHomeFragment</string>
     <string name="mySecondFragmentTitle">MySecondFragment</string>
     <string name="myThirdFragmentTitle">MyThirdFragment</string>
+    <string name="enter_your_number">Enter your number ...</string>
+    <string name="enter_your_message">Enter your message ...</string>
+    <string name="user_information">User Information</string>
+    <string name="enter_user_id">Enter User ID ...</string>
+    <string name="enter_user_name">Enter User Name ...</string>
+    <string name="next_page">Next page</string>
+    <string name="number_from_home">Number From Home</string>
+    <string name="message_from_home">Message From Home</string>
+    <string name="enter_user_address">Enter User Address</string>
 </resources>
