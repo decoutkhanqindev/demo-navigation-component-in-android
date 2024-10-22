@@ -25,11 +25,11 @@ android {
     }
   }
   compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
   }
   kotlinOptions {
-    jvmTarget = "11"
+    jvmTarget = "17"
   }
   
   buildFeatures {
@@ -42,7 +42,6 @@ dependencies {
   implementation(libs.androidx.core.ktx)
   implementation(libs.androidx.appcompat)
   implementation(libs.material)
-  implementation(libs.androidx.fragment.ktx)
   implementation(libs.androidx.activity)
   implementation(libs.androidx.constraintlayout)
   testImplementation(libs.junit)
@@ -54,4 +53,5 @@ dependencies {
   implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
   implementation("androidx.navigation:navigation-fragment:$nav_version")
   implementation("androidx.navigation:navigation-ui:$nav_version")
+  implementation(libs.androidx.fragment.ktx)
 }
