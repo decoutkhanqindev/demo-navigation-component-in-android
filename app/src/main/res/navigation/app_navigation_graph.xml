@@ -16,20 +16,22 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        <argument
-            android:name="argIntegerFromHome"
-            android:defaultValue="1"
-            app:argType="integer" />
-        <argument
-            android:name="argStringFromHome"
-            android:defaultValue="Hello"
-            app:argType="string" />
-        <argument
-            android:name="argUserFromHome"
-            app:argType="com.example.demonavigationcomponetinandroid.User"
-            app:nullable="true" />
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="number"
+                android:defaultValue="0"
+                app:argType="string" />
+            <argument
+                android:name="message"
+                android:defaultValue="hello"
+                app:argType="string" />
+            <argument
+                android:name="user"
+                app:argType="com.example.demonavigationcomponetinandroid.User"
+                app:nullable="true" />
+        </action>
     </fragment>
+
     <fragment
         android:id="@+id/mySecondFragment"
         android:name="com.example.demonavigationcomponetinandroid.MySecondFragment"
@@ -42,7 +44,20 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="number"
+            android:defaultValue="0"
+            app:argType="string" />
+        <argument
+            android:name="message"
+            android:defaultValue="hello"
+            app:argType="string" />
+        <argument
+            android:name="user"
+            app:argType="com.example.demonavigationcomponetinandroid.User"
+            app:nullable="true" />
     </fragment>
+
     <fragment
         android:id="@+id/myThirdFragment"
         android:name="com.example.demonavigationcomponetinandroid.MyThirdFragment"
@@ -63,4 +78,5 @@
             app:popExitAnim="@anim/slide_out_right"
             app:popUpTo="@id/myHomeFragment" />
     </fragment>
+
 </navigation>
