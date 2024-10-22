@@ -3,7 +3,6 @@ package com.example.demonavigationcomponetinandroid
 import android.os.Parcel
 import android.os.Parcelable
 import androidx.annotation.Keep
-import java.io.Serializable
 
 // to prevent your Parcelable, Serializable, and Enum class names from being obfuscated as
 // part of the minification process.
@@ -11,9 +10,9 @@ import java.io.Serializable
 // Use @Keep annotations.
 // Use keepnames rules.
 @Keep
-data class User(val id: String, val name: String, val address: String) : Parcelable, Serializable {
+data class User(val id: String, val name: String, val address: String) : Parcelable {
   constructor(parcel: Parcel) : this(
-    parcel.readString().toString(), parcel.readString().toString(), parcel.readString().toString()
+    parcel.readString()!!, parcel.readString()!!, parcel.readString()!!
   )
   
   override fun writeToParcel(parcel: Parcel, flags: Int) {
